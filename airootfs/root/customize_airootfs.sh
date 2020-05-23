@@ -23,6 +23,9 @@ systemctl enable pacman-init.service choose-mirror.service
 systemctl set-default graphical.target
 systemctl enable sddm.service
 
+pacman-key --init
+pacman-key --populate archlinux
+
 groupscarli="adm,audio,disk,floppy,log,network,optical,rfkill,storage,video,wheel,sys"
 useradd -m -g users -G $groupscarli -s /bin/bash liveuser
 passwd -d liveuser
