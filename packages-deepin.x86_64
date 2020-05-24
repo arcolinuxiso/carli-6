@@ -80,12 +80,10 @@ xfsprogs
 xl2tpd
 
 #Carli
-plasma-meta
-kde-applications-meta
-packagekit-qt5
 sddm
+deepin
+deepin-extra
 bash-completion
-partitionmanager
 
 #Calamares
 calamares

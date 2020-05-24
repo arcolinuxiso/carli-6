@@ -80,12 +80,12 @@ xfsprogs
 xl2tpd
 
 #Carli
-plasma-meta
-kde-applications-meta
-packagekit-qt5
 sddm
+gnome
+dconf-editor
+gnome-tweaks
+guake
 bash-completion
-partitionmanager
 
 #Calamares
 calamares

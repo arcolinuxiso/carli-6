@@ -80,12 +80,11 @@ xfsprogs
 xl2tpd
 
 #Carli
-plasma-meta
-kde-applications-meta
-packagekit-qt5
 sddm
+cinnamon
+nemo-fileroller
+gnome-terminal
 bash-completion
-partitionmanager
 
 #Calamares
 calamares
