@@ -110,6 +110,9 @@ make_customize_airootfs() {
 
     mkarchiso ${verbose} -w "${work_dir}/x86_64" -C "${work_dir}/pacman.conf" -D "${install_dir}" -r '/root/customize_airootfs.sh' run
     rm ${work_dir}/x86_64/airootfs/root/customize_airootfs.sh
+    chmod 750 ${work_dir}/x86_64/airootfs/etc/sudoers.d
+    chmod 750 ${work_dir}/x86_64/airootfs/etc/polkit-1/rules.d
+    chgrp polkitd ${work_dir}/x86_64/airootfs/etc/polkit-1/rules.d
 }
 
 # Prepare kernel/initramfs ${install_dir}/boot/

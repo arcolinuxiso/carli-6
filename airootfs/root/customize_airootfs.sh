@@ -29,3 +29,8 @@ pacman-key --populate archlinux
 groupscarli="adm,audio,disk,floppy,log,network,optical,rfkill,storage,video,wheel,sys"
 useradd -m -g users -G $groupscarli -s /bin/bash liveuser
 passwd -d liveuser
+
+#set permissions
+chmod 750 /etc/sudoers.d
+chmod 750 /etc/polkit-1/rules.d
+chgrp polkitd /etc/polkit-1/rules.d
